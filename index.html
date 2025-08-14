@@ -9,48 +9,62 @@
 <body>
     <div class="mainContainer">
         <div class="leftColumn">
-            
+            <diV class="logoContainer">
+                <img class="logo" src="./images/ChatGPT Image Aug 14, 2025, 12_19_17 PM Background Removed.png">
+                <h1 class="gradientText">GlobeGain</h1>
+            </diV>
+
+            <div class="leftColumnStats">
+                <h2>Join our <span class="fancyText">network</span> of sponsored travelers <span class="fancyText">and</span> start earning from <span class="fancyText">your</span> jour<span class="fancyText">neys.</span></h2>
+            </div>
             
         </div>
         <div class="rightColumn">
-            <form method="post">
-                <div class="formContainer">
-                    <h2>Form header here</h2>
-                    
-                    <div>
-                        <label for="firstName">First Name</label>
-                        <input type="text" id="firstName" name="firstName">
-                    </div>
-                    
-                    <div>
-                        <label for="lastName">Last Name</label>
-                        <input type="text" id="lastName" name="lastName">
-                    </div>
-
-                    <div>
-                        <label for="emailInput">Email</label>
-                        <input type="email" id="emailInput" name="email" placeholder="you@gmail.com">
-                    </div>
-                    <!-- need to add validation for the phoneNumber -->
-                    <div>
-                        <label for="phoneNumber">Phone Number</label>
-                        <input type="number" id="phoneNumber" name="phoneNumber">
-                    </div>
-
-                    <div>
-                        <label for="passwordInput">Password</label>
-                        <input type="password" id="passwordInput" name="password">
-                    </div>
-
-                    <div>
-                        <label for="confirmPassword">Confirm Password</label>
-                        <input type="password" id="confirmPassword" name="confirmPassword">
-                    </div>
+            <div class="contentContainer">
+                <div class="copyContainer">
+                    <p>With over 500+ trusted sponsors, GlobeGain is a platform that helps
+                        adventurers, nomads with brands looking to sponsor authentic travel content. 
+                    </p>
+                    <h4>Turn your adventures into income</h4>
                 </div>
-
-
-            </form>
-            <p>Already have an account? Log in</p>
+                <form method="post">
+                    <div class="inputContainer">
+                        <h2 id="formHeader">Create your account</h2>
+                        <div class="formContainer">
+                            <div class="inputDiv">
+                                <label for="firstName">First Name</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="inputDiv">
+                                <label for="lastName">Last Name</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                            <div class="inputDiv">
+                                <label for="emailInput">Email</label>
+                                <input type="email" id="emailInput" name="email" placeholder="you@gmail.com" required>
+                            </div>
+                            <!-- need to add validation for the phoneNumber -->
+                            <div class="inputDiv">
+                                <label for="phoneNumber">Phone Number</label>
+                                <input type="number" id="phoneNumber" name="phoneNumber">
+                            </div>
+                            <div class="inputDiv">
+                                <label for="passwordInput">Password</label>
+                                <input type="password" id="passwordInput" name="password" required>
+                            </div>
+                            <div class="inputDiv">
+                                <label for="confirmPassword">Confirm Password</label>
+                                <input type="password" id="confirmPassword" name="confirmPassword" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="buttonContainer">
+                        <button type="submit" id="submitButton">Sign up</button>
+                    </div>
+                    <p style="padding: 0 32px; color:black;">Already have an account? <a href="">Log in</a></p>
+                </form>
+            </div>
+            
         </div>
     </div>
     
